@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"try_step\startup_stm32f407xx.o"
+"try_step\main.o"
+"try_step\stm32f4xx_it.o"
+"try_step\stm32f4xx_hal_msp.o"
+"try_step\stm32f4xx_hal_tim.o"
+"try_step\stm32f4xx_hal_tim_ex.o"
+"try_step\stm32f4xx_hal_uart.o"
+"try_step\stm32f4xx_hal_rcc.o"
+"try_step\stm32f4xx_hal_rcc_ex.o"
+"try_step\stm32f4xx_hal_flash.o"
+"try_step\stm32f4xx_hal_flash_ex.o"
+"try_step\stm32f4xx_hal_flash_ramfunc.o"
+"try_step\stm32f4xx_hal_gpio.o"
+"try_step\stm32f4xx_hal_dma_ex.o"
+"try_step\stm32f4xx_hal_dma.o"
+"try_step\stm32f4xx_hal_pwr.o"
+"try_step\stm32f4xx_hal_pwr_ex.o"
+"try_step\stm32f4xx_hal_cortex.o"
+"try_step\stm32f4xx_hal.o"
+"try_step\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "try_step\try_step.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "try_step.map" -o try_step\try_step.axf

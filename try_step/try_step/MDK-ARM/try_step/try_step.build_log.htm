@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: VY NGUYEN, DHBK, LIC=D0D7S-L7W3Q-UHW8H-WXMCT-V3YT5-WQMTK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\try_step\try_step\MDK-ARM\try_step.uvprojx
+Project File Date:  04/29/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'try_step'
+compiling main.c...
+../Src/main.c(128): warning:  #1295-D: Deprecated declaration Received_and_Send - give arg types
+  void Received_and_Send();
+../Src/main.c(129): warning:  #1295-D: Deprecated declaration clear_buffer - give arg types
+  void clear_buffer();
+../Src/main.c(135): warning:  #1295-D: Deprecated declaration penUp - give arg types
+  void penUp();
+../Src/main.c(136): warning:  #1295-D: Deprecated declaration penDown - give arg types
+  void penDown();
+../Src/main.c(137): warning:  #1295-D: Deprecated declaration homecoming - give arg types
+  void homecoming();
+../Src/main.c(196): warning:  #177-D: variable "i" was declared but never referenced
+  		int i;
+../Src/main.c(511): warning:  #1182-D: a declaration cannot have a label
+  						char *indexX = strchr(line,'X');
+../Src/main.c(506): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "indexX" (declared at line 511)
+            variable "indexY" (declared at line 512)
+  				switch(line[currentIndex++]){
+  				^
+../Src/main.c(531): warning:  #1182-D: a declaration cannot have a label
+  								char* indexS = strchr( line+currentIndex, 'S' );
+../Src/main.c(529): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "indexS" (declared at line 531)
+            variable "Spos" (declared at line 532)
+  						switch ( atoi( buffer ) ){
+  						^
+../Src/main.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=12692 RO-data=584 RW-data=92 ZI-data=1740  
+FromELF: creating hex file...
+"try_step\try_step.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM::CMSIS:CORE:5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\try_step\try_step\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
+      Include file:  CMSIS\Core\Include\tz_context.h
+      Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
